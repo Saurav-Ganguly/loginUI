@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:loginui/widgets/grident_button.dart';
 import 'package:loginui/widgets/login_field.dart';
 import 'package:loginui/widgets/social_button.dart';
 
@@ -49,6 +50,7 @@ class LoginScreen extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
+              const GradientButton(),
             ],
           ),
         ),
