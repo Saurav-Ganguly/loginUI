@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:loginui/widgets/login_field.dart';
 import 'package:loginui/widgets/social_button.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -29,6 +30,24 @@ class LoginScreen extends StatelessWidget {
               const SocialButton(
                 iconPath: 'assets/svgs/g_logo.svg',
                 labelText: 'Google',
+              ),
+              const SizedBox(height: 15),
+              const Text(
+                'or',
+                style: TextStyle(
+                  fontSize: 17,
+                ),
+              ),
+              const SizedBox(height: 15),
+              const LoginField(
+                hintText: 'Email',
+              ),
+              const SizedBox(height: 15),
+              const LoginField(
+                hintText: 'Passoword',
+              ),
+              const SizedBox(
+                height: 20,
               ),
             ],
           ),
